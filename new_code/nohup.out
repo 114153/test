@@ -1,0 +1,32 @@
+RUNDIR: runs/train_resnet34/2019-03-25-14-05-59_0.0004
+6058 1516
+{'checkpoint': {'path': './checkpoint', 'num': 3, 'resume': None}, 'model': {'arch': 'resnet34', 'pretrained': 1}, 'training': {'cos_length': 2, 'optimizer': {'nesterov': 1, 'weight_decay': 0, 'lr': 0.0004, 'momentum': 0.9}, 'nfold': 5, 'nb_classes': 2, 'workers': 7, 'print_freq': 10, 'start_epoch': 0, 'batch_size': 32, 'epochs': 100, 'scheduler': '2', 'num_grad_acc': None}, 'augmentations': None, 'dataset': {'data': '/home/new_dataset'}}
+Using optimizer Nadam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    initial_lr: 4e-05
+    lr: 4e-05
+    schedule_decay: 0.004
+
+Parameter Group 1
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    initial_lr: 0.000133333333333
+    lr: 0.000133333333333
+    schedule_decay: 0.004
+
+Parameter Group 2
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    initial_lr: 0.0004
+    lr: 0.0004
+    schedule_decay: 0.004
+)
+fold 0	Epoch: [0][1/190]	Loss 0.6948 (0.6948)	F1 0.508 (0.508)	
+fold 0	Epoch: [0][11/190]	Loss 0.7479 (0.7164)	F1 0.492 (0.541)	
+fold 0	Epoch: [0][21/190]	Loss 0.7104 (0.7142)	F1 0.491 (0.544)	
+fold 0	Epoch: [0][31/190]	Loss 0.6643 (0.7071)	F1 0.520 (0.538)	

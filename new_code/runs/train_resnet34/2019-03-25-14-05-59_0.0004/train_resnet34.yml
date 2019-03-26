@@ -1,0 +1,33 @@
+dataset:
+  data: /home/new_dataset
+
+model:
+  arch: resnet34
+  pretrained: 1
+
+training:
+  nfold: 5
+  epochs: 100
+  batch_size: 32
+  nb_classes: 2
+  start_epoch: 0
+  workers: 7
+  print_freq: 10
+  cos_length: 2
+  scheduler: '2'
+  num_grad_acc: 
+
+
+  optimizer:
+    lr: 0.0004
+    momentum: 0.9
+    weight_decay: 0
+    nesterov: 1
+
+checkpoint:
+  num: 3
+  path: ./checkpoint
+  resume: 
+
+augmentations:
+  
